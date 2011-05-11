@@ -1,0 +1,306 @@
+html {
+}
+
+body { 
+	margin: 40px 0px 0px 0px;
+	padding: 0px;
+	height: 100%;
+	font-family: Museo-300;
+	font-size: 11px;
+	background-color: #10010C;
+	background-image: url(../images/curtains2b.jpg);
+	background-repeat: repeat-x; 
+	background-position-x: center;
+	color: #ffffff;
+}
+
+
+
+a:link		{ color:#96A5AA; text-decoration:none; }
+a:visited	{ color:#96A5AA; text-decoration:none; }
+a:hover		{ color:white; text-decoration:underline; }
+a:active	{ color:white; text-decoration:underline; }
+
+
+
+
+
+
+
+
+
+#content{
+	width: 935px;
+	margin: 0 auto;
+	padding-left: 10px;
+	/* border: 1px solid #00ff00; */
+	background-image: url(../images/tube-it-logo.png);
+	background-position-x: 2px;
+	background-repeat: no-repeat;
+}
+
+
+#top{
+	
+	min-height: 420px;
+}
+
+
+
+
+
+/* MASTEHEAD */
+#top .masthead{
+	width: 280px;
+	padding-top: 170px;
+}
+
+#top .masthead .title{
+	margin: 25px 0px 5px 0px;
+	padding-bottom: 0px;
+	font-size: 13px;
+}
+
+#top .masthead p{
+	margin: 0;
+}
+#top .masthead button{
+	border: none;
+	padding: 0;
+	-moz-box-shadow: 0px 0px 30px #000;
+	-webkit-box-shadow: 0px 0px 30px #000;
+}
+
+
+#top .masthead .copyButton{
+	text-align: left;
+	padding: 0;
+	background-image: url(../images/copy-button-background.png);
+	width: 232px;
+	height: 22px;
+}
+#top .masthead .inputArea{
+	width: 263px;
+	height: 30px;
+	background-color: white;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 
+	-moz-box-shadow: 0px 0px 30px #000;
+	-webkit-box-shadow: 0px 0px 30px #000;
+}
+
+
+#top .masthead #ytVideoURL[type="text"]{
+	display: block;
+	background-color: transparent;
+	border: none;
+	width: 205px;
+	padding: 8px;
+}
+#top .masthead #roomURL[type="text"]{
+	display: block;
+	background-color: transparent;
+	border: none;
+	width: 205px;
+	padding: 8px;
+}
+
+#top .masthead #copyURLButton{
+	background-color: transparent;
+	height:30px;
+	width: 42px;
+	float: right;
+	-moz-box-shadow: 0px 0px 30px #000;
+	-webkit-box-shadow: 0px 0px 30px #000;
+}
+
+#top .masthead #newVideoButton{
+	background-color: #A5258D;
+	height:30px;
+	width: 42px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-radius-topleft: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	text-align: center;
+	float: right;
+	color: white;
+	cursor: pointer;
+}
+
+#top .masthead #newVideoButton:hover{
+	background-color: #ae409f;
+}
+#top .masthead #newVideoButton:active{
+	background-color: #3578A5;
+}
+
+
+
+
+#top .masthead .controlButtons{
+	padding-top: 10px;
+}
+
+#top .masthead .controlButtons Button{
+	color: white;
+	height: 30px;
+	width: 126px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+#top .masthead .tweetButton .twitterIcon{
+	margin-top: -8px;
+}
+#top .masthead .tweetButton{
+	background-color: #3578A5;	
+	margin-right: 8px;
+	line-height: 30px;
+}
+
+#top .masthead .stopParticipatingButton{
+	background-color: #A5258D;
+}
+
+#top .masthead .stopParticipatingButton:hover{
+	background-color: #ae409f;
+}
+#top .masthead .stopParticipatingButton:active{
+	background-color: #3578A5;
+}
+
+
+
+#top .masthead .tweetButton:hover{
+	background-color: #4c93c6;
+}
+#top .masthead .tweetButton:active{
+	background-color: #A5258D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#top .videoContainer{
+	width: 640px;
+	height: 390px;
+	float:right;
+}
+
+#top #videoPlayerHolder{
+	/* position: relative; */
+	/* z-index: -1; */
+	display: block;
+}
+
+
+#middle{
+	clear: both;
+}
+
+
+#middle .streamsList{
+	min-height: 160px;
+}
+
+#middle ul{
+	padding-left: 0px;
+}
+
+#middle .streamsList li {
+	float: left;
+	list-style:none;
+	/* padding-right: 33px; */
+	padding-left: 36px;
+	padding-right: 36px;
+	height: 120px;
+	width: 160px;
+	background-repeat: no-repeat;
+}
+
+#middle .streamsList #end1{ padding-right: 0px; }
+#middle .streamsList #end2{	padding-right: 0px; }
+
+
+
+
+#middle .streamHolder1{ height: 120px; width: 160px;background-image: url(../images/silhouettte01.png); }
+#middle .streamHolder2{ height: 120px; width: 160px;background-image: url(../images/silhouettte02.png); }
+#middle .streamHolder3{ height: 120px; width: 160px;background-image: url(../images/silhouettte03.png); }
+#middle .streamHolder4{ height: 120px; width: 160px;background-image: url(../images/silhouettte04.png); }
+#middle .streamHolder5{ height: 120px; width: 160px;background-image: url(../images/silhouettte05.png); }
+#middle .streamHolder6{ height: 120px; width: 160px;background-image: url(../images/silhouettte06.png); }
+#middle .streamHolder7{ height: 120px; width: 160px;background-image: url(../images/silhouettte07.png); }
+#middle .streamHolder8{ height: 120px; width: 160px;background-image: url(../images/silhouettte08.png); }
+
+
+
+
+#middle .streamName{
+	height: 20px;
+}
+
+.videoOwnerMarker{
+	width: 39px;
+	height: 44px;
+	position: absolute;
+	z-index: 999;
+	left: 121px;
+	background-image: url(../images/owner-marker.png);
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+#footer{
+	bottom: 0px;
+	border-top: 1px solid #BC5BAE;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #BC5BAE
+}
+#testingText{
+	color: #999;
+}
+
+#footer a:link		{ color:#BC5BAE; text-decoration:none; }
+#footer a:visited	{ color:#BC5BAE; text-decoration:none; }
+#footer a:hover		{ color:#BC5BAE; text-decoration:underline; }
+#footer a:active	{ color:#BC5BAE; text-decoration:underline; }
+
+
+
+
+
+
+
+
+
+

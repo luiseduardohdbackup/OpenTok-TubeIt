@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tube it!</title>
+		<meta name="description" content="Group video viewing with Tokbox!">
+		<meta name="keywords" content="video chat, OpenTok, TokBox">
+		<link type="text/css" href="styles/custom-theme/jquery-ui-1.8.10.custom.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="styles/tube-it.css" />	
+		<script type="text/javascript">
+			var baseURL = "http://tubeit.opentok.com/";
+			var thePartnerKey = 1127;
+			var ytVideoID = "kpai3vZi-vs";
+		</script>
+		<script src="http://js.pusherapp.com/1.7/pusher.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="scripts/webfont-museo300.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui-1.8.10.custom.min.js"></script>
+		<script type="text/javascript" src="http://staging.tokbox.com/v0.91/js/TB.min.js"></script>
+		<script type="text/javascript" src="scripts/swfobject.js"></script>
+		<script type="text/javascript" src="scripts/tube-it.js"></script>
+	</head>
+	
+	<body>	
+		<div id="content">	
+			<div id="top">				
+				<div class="videoContainer">
+					<div id="videoPlayerHolder">
+						<div id="ytVideoPlayerContainer">
+	   						Flash player and JavaScript are required to view this video.
+	  					</div>
+  					</div>
+				</div>
+				<div class="masthead">
+					<p class="title">YouTube video URL</p>
+					<div class="inputArea">
+						<button id="newVideoButton" onclick="handleLoadVideoClick()">go</button>	
+						<input type="text" id="ytVideoURL" value=""/>
+					</div>
+					<p  class="title">Share this link with your friends</p>
+					<div class="inputArea">		
+						<div id="copyURLButton" ><div id="copyToClipboardSWF"></div></div>
+						<input type="text" id="roomURL" value="" readonly="readonly"/>
+					</div>
+					<div class="controlButtons">
+						<button class="tweetButton" onclick="onTweetButtonClick()">
+							Tweet it
+							<img src="images/twitter_bird.png" alt="Tweet it" width="29" height="20" align="middle" class="twitterIcon"/>
+						</button>
+						<button class="stopParticipatingButton" onclick="onJoinClick()" id="joinButton">
+							Start participating
+						</button>
+					</div>				
+				</div>		
+			</div>
+			<div id="middle">
+				<ul class="streamsList">
+					<li id="dude1">
+						<div id="stream_name_1" class="streamName"></div>
+						<div id="stream_1" class="streamHolder1"></div>
+					</li>
+					<li id="dude2">
+						<div id="stream_name_2" class="streamName"></div>
+						<div id="stream_2" class="streamHolder2"></div>
+					</li>
+					<li id="dude3">
+						<div id="stream_name_3" class="streamName"></div>
+						<div id="stream_3" class="streamHolder3"></div>
+					</li>
+					<li id="dude4">
+						<div id="stream_name_4" class="streamName"></div>
+						<div id="stream_4" class="streamHolder4"></div>
+					</li>
+					
+				</ul>
+				<ul class="streamsList">
+					<li id="dude5">
+						<div id="stream_name_5" class="streamName"></div>
+						<div id="stream_5" class="streamHolder5"></div>
+					</li>
+					<li id="dude6">
+						<div id="stream_name_6" class="streamName"></div>
+						<div id="stream_6" class="streamHolder6"></div>
+					</li>
+					<li id="dude7">
+						<div id="stream_name_7" class="streamName"></div>
+						<div id="stream_7" class="streamHolder7"></div>
+					</li>
+					<li id="dude8">
+						<div id="stream_name_8" class="streamName"></div>
+						<div id="stream_8" class="streamHolder8"></div>
+					</li>
+					
+				</ul>
+				
+			</div>
+
+			<!--
+
+			<div id="middle">
+				<ul class="streamsList">
+					<li>
+						<div id="stream_1" class="streamHolder"></div>
+						<div id="stream_name_1" class="streamName"></div>
+					</li>
+					<li>
+						<div id="stream_2" class="streamHolder"></div>
+						<div id="stream_name_2" class="streamName"></div>
+					</li>
+					<li>
+						<div id="stream_3" class="streamHolder"></div>
+						<div id="stream_name_3" class="streamName"></div>
+					</li>
+					<li>
+						<div id="stream_4" class="streamHolder"></div>
+						<div id="stream_name_4" class="streamName"></div>
+					</li>
+					<li id="end1">
+						<div id="stream_5" class="streamHolder"></div>
+						<div id="stream_name_5" class="streamName"></div>
+					</li>
+				</ul>
+				<ul class="streamsList">
+					<li>
+						<div id="stream_6" class="streamHolder"></div>
+						<div id="stream_name_6" class="streamName"></div>
+					</li>
+					<li>
+						<div id="stream_7" class="streamHolder"></div>
+						<div id="stream_name_7" class="streamName"></div>
+					</li>
+					<li>
+						<div id="stream_8" class="streamHolder"></div>
+						<div id="stream_name_8" class="streamName"></div>
+					</li>
+					<li>
+						<div id="stream_9" class="streamHolder"></div>
+						<div id="stream_name_9" class="streamName"></div>
+					</li>
+					<li id="end2">
+						<div id="stream_name_10" class="streamName"></div>
+						<div id="stream_10" class="streamHolder"></div>
+					</li>
+				</ul>
+				
+			</div>
+-->
+			<div id="footer">
+	  			Copyright &copy; 2011 <a href="http://www.tokbox.com">TokBox</a> | Developed by <a href="http://www.bucketduck.com">Bucketduck Inc. </a>
+	  		</div>
+	  	</div>
+	</body>
+</html>
+
+
+
+
+
